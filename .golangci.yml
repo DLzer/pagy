@@ -81,14 +81,7 @@ linters-settings:
   gocyclo:
     min-complexity: 15
   goimports:
-    local-prefixes: github.com/georgysavva/scany
-  gomnd:
-    settings:
-      mnd:
-        # don't include the "operation" and "assign"
-        checks: argument,case,condition,return
-  govet:
-    check-shadowing: true
+    local-prefixes: github.com/dlzer/pagy
   misspell:
     locale: US
   nolintlint:

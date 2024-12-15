@@ -2,11 +2,11 @@ package pagy_test
 
 import (
 	"net/http"
-	"pagy/pagy"
 	"reflect"
 	"testing"
 
 	"github.com/cornelk/hashmap/assert"
+	"github.com/dlzer/pagy/pagy"
 )
 
 var (

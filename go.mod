@@ -1,4 +1,4 @@
-module pagy
+module github.com/dlzer/pagy
 
 go 1.22.4
 
