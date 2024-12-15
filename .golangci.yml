@@ -15,7 +15,6 @@ linters:
     - goerr113
     - gofmt
     - gofumpt
-    - goimports
     - goprintffuncname
     - gosec
     - gosimple
@@ -80,8 +79,6 @@ linters-settings:
       - whyNoLint
   gocyclo:
     min-complexity: 15
-  goimports:
-    local-prefixes: github.com/dlzer/pagy
   misspell:
     locale: US
   nolintlint:
