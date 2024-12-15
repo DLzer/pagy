@@ -68,24 +68,24 @@ pagy uses generics so it's agnostic and doesn't really care what type of structu
 ```go
 func (p *postgresUserRepository) GetList(ctx context.Context, pq *pagy.PaginationQuery) (*pagy.PaginationResponse[domain.User], error) {{
     var count int
-	countQuery := "SELECT count(uuid) FROM users;"
-	if err := p.conn.QueryRow(ctx, countQuery).Scan(&count); err != nil {
-		return nil, err
-	}
+    countQuery := "SELECT count(uuid) FROM users;"
+    if err := p.conn.QueryRow(ctx, countQuery).Scan(&count); err != nil {
+    	return nil, err
+    }
 
-	if count == 0 {
-		return pagy.DefaultPaginationResponse[domain.User](pq), nil
-	}
+    if count == 0 {
+    	return pagy.DefaultPaginationResponse[domain.User](pq), nil
+    }
 
-	query := "SELECT * FROM users ORDER BY $1::text OFFSET $2 LIMIT $3"
-	rows, err := p.conn.Query(ctx, query, pq.GetOrderBy(), pq.GetOffset(), pq.GetLimit())
-	if err != nil {
-		return nil, err
-	}
-	defer rows.Close()
+    query := "SELECT * FROM users ORDER BY $1::text OFFSET $2 LIMIT $3"
+    rows, err := p.conn.Query(ctx, query, pq.GetOrderBy(), pq.GetOffset(), pq.GetLimit())
+    if err != nil {
+    	return nil, err
+    }
+    defer rows.Close()
 
     var uu []domain.User
-	for rows.Next() {
+    for rows.Next() {
         //... Scan your user
     }
 
