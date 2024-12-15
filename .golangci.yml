@@ -6,7 +6,6 @@ linters:
     - dupl
     - errcheck
     - exhaustive
-    - exportloopref
     - funlen
     - gochecknoinits
     - goconst
@@ -17,7 +16,6 @@ linters:
     - gofmt
     - gofumpt
     - goimports
-    - gomnd
     - goprintffuncname
     - gosec
     - gosimple
