@@ -1,4 +1,5 @@
 # pagy
+[![Go Report Card](https://goreportcard.com/badge/github.com/DLzer/pagy)](https://goreportcard.com/report/github.com/DLzer/pagy)
 
 ![golang-gopher](https://static-projects.nyc3.cdn.digitaloceanspaces.com/golang_gopher300x300.png)]
 
