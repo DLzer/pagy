@@ -118,7 +118,12 @@ func TestGetPaginationFromRequest(t *testing.T) {
 		want    *pagy.PaginationQuery
 		wantErr bool
 	}{
-		{name: "base", args: args{req}, want: &pagy.PaginationQuery{Page: 1, Size: 10, OrderBy: "first_name DESC"}, wantErr: false},
+		{
+			name:    "base",
+			args:    args{req},
+			want:    &pagy.PaginationQuery{Page: 1, Size: 10, OrderBy: "first_name DESC"},
+			wantErr: false,
+		},
 	}
 	for _, tt := range tests {
 		t.Run(tt.name, func(t *testing.T) {
