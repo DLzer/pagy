@@ -95,22 +95,3 @@ linters-settings:
     locale: US
   nolintlint:
     allow-unused: false
-
-issues:
-  exclude-use-default: false
-  exclude:
-    - "should have a package comment, unless it's in another file for this package"
-    - "err113: do not define dynamic errors, use wrapped static errors instead"
-  exclude-rules:
-    - linters:
-        - errcheck
-        - gosec
-        - rowserrcheck
-      path: (example_test\.go|example_[0-9A-Za-z_-]+_test\.go)
-    - linters:
-        - funlen
-        - rowserrcheck
-        - lll
-      path: _test\.go
-
-  max-same-issues: 0

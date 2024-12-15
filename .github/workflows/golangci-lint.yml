@@ -6,6 +6,9 @@ on:
       - main
   pull_request:
 
+permissions:
+  contents: read
+
 jobs:
   golangci:
     name: lint
@@ -13,9 +16,10 @@ jobs:
     steps:
       - uses: actions/setup-go@v3
         with:
-          go-version: 1.22
+          go-version: 1.22.4
       - uses: actions/checkout@v3
       - name: golangci-lint
         uses: golangci/golangci-lint-action@v3
         with:
-          version: v1.49
+          version: v1.62
+          args: --timeout=10m
