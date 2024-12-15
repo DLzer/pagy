@@ -12,7 +12,7 @@ jobs:
   test:
     strategy:
       matrix:
-        go-version: [1.18.x, 1.19.x, 1.22.x]
+        go-version: [1.22.x]
     env:
       GO: ${{ matrix.go-version }}
     runs-on: ubuntu-latest
