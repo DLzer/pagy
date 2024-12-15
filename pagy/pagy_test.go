@@ -5,8 +5,8 @@ import (
 	"reflect"
 	"testing"
 
+	"github.com/DLzer/pagy/pagy"
 	"github.com/cornelk/hashmap/assert"
-	"github.com/dlzer/pagy/pagy"
 )
 
 var (

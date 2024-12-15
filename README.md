@@ -17,7 +17,7 @@ pagy works with the stdlib [http.Request](https://pkg.go.dev/net/http#Request) s
 
 ## Install
 ```bash
-go get github.com/dlzer/pagy
+go get github.com/DLzer/pagy
 ```
 
 ## What it looks like
