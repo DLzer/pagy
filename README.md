@@ -1,5 +1,7 @@
 # pagy
+[![Test](https://github.com/DLzer/pagy/actions/workflows/test.yml/badge.svg)](https://github.com/DLzer/pagy/actions/workflows/test.yml)
 [![Go Report Card](https://goreportcard.com/badge/github.com/DLzer/pagy)](https://goreportcard.com/report/github.com/DLzer/pagy)
+[![PkgGoDev](https://pkg.go.dev/badge/github.com/DLzer/pagy)](https://pkg.go.dev/github.com/DLzer/pagy)
 
 ![golang-gopher](https://static-projects.nyc3.cdn.digitaloceanspaces.com/golang_gopher300x300.png)]
 
