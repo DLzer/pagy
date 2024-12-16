@@ -5,7 +5,7 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/DLzer/pagy/pagy"
+	"github.com/DLzer/pagy"
 	"github.com/cornelk/hashmap/assert"
 )
 

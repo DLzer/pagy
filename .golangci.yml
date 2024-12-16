@@ -12,7 +12,7 @@ linters:
     - gocritic
     - gocyclo
     - godot
-    - goerr113
+    - err113
     - gofmt
     - gofumpt
     - goprintffuncname
